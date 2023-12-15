@@ -1,0 +1,46 @@
+.gallery {
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__place {
+    margin-bottom: 32px;
+
+    @include onDesktop {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__photos {
+    margin-bottom: 16px;
+
+    @include onDesktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid transparent;
+    transition: border-color $smoothTime;
+
+    &:hover {
+      border-color: $colorBlue;
+    }
+  }
+
+  &__place-title {
+    font-weight: bold;
+    color: $colorBlue;
+  }
+
+  &__button {
+    @include onDesktop {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}

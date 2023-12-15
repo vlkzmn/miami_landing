@@ -1,0 +1,78 @@
+.testimonial {
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__content {
+    display: block;
+
+    @include onDesktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      width: 30%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+
+    @include onDesktop {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__photo {
+    width: 30%;
+    border-radius: 50%;
+    transition: transform $smoothTime linear;
+
+    &:hover {
+      transform: scale(103%);
+    }
+
+    @include onDesktop {
+      width: 50%;
+    }
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: $colorBlue;
+  }
+
+  &__role {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: $colorLightGray;
+  }
+
+  &__about {
+    text-align: center;
+  }
+}

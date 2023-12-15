@@ -1,0 +1,66 @@
+.about {
+  &__container {
+    @extend %container;
+  }
+
+  &__wrapper {
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: $colorBlack;
+
+    @include onDesktop {
+      flex: 1;
+      margin-bottom: 0;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__content {
+    @include onDesktop {
+      flex: 1;
+    }
+  }
+
+  &__title-link {
+    display: block;
+    width: max-content;
+    color: $colorBlue;
+    border-bottom: 2px solid transparent;
+    transition: border-color $smoothTime;
+
+    &:hover {
+      border-color: $colorBlue;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $colorBlue;
+  }
+
+  &__paragraph {
+    margin-bottom: 26px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--important {
+      font-weight: bold;
+    }
+  }
+}

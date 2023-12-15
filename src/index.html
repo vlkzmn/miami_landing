@@ -1,13 +1,458 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+
+    <link
+      rel="shortcut icon"
+      href="./images/crown.svg"
+      type="image/x-icon"
+    >
+
     <link rel="stylesheet" href="./styles/main.scss">
+
+    <link rel="canonical" href="https://vlkzmn.github.io/miami_landing/"/>
+
+    <title>
+      Miami Landing Page
+    </title>
+
+    <meta name="description" content="Miami Landing Page">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="page__section header">
+      <div class="header__container">
+        <div class="header__content">
+          <nav class="top-action">
+            <a
+              href="#menu"
+              class="icon icon--menu"
+              aria-label="Open menu button"
+            ></a>
+
+            <a href="https://vlkzmn.github.io/miami_landing/" class="logo">
+              <img
+                src="./images/miami-condo-kings-logo.png"
+                class="logo__image"
+                alt="Miami Condo Kings Logo"
+              >
+            </a>
+
+            <a
+              href="tel:+1 234 555-55-55"
+              class="icon icon--phone"
+              aria-label="Open phone number to make call"
+            ></a>
+          </nav>
+
+          <h1 class="header__title">
+            Miami
+            <br>
+            Condo Kings
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <nav class="page__menu menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__content">
+          <div class="menu__top top-action">
+            <a
+              href="#"
+              class="icon icon--cross"
+              aria-label="Close menu button"
+            ></a>
+
+            <a href="/" class="logo">
+              <img
+                src="./images/miami-condo-kings-logo.png"
+                class="logo__image"
+                alt="Miami Condo Kings"
+              >
+            </a>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="https://vlkzmn.github.io/miami_landing/" class="menu__link">Home</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#about-us" class="menu__link">About Us</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#gallery" class="menu__link">Galery</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#testimonials" class="menu__link">Testimonial</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#contact-us" class="menu__link">Contact Us</a>
+            </li>
+          </ul>
+
+
+          <a href="tel:+1 234 555-55-55" class="menu__call">
+            <span class="menu__call menu__call--phone">
+              +1 234 555-55-55
+            </span>
+
+            <span class="menu__call menu__call--action">
+              call to order
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page__section about" id="about-us">
+        <div class="about__container">
+          <div class="about__wrapper">
+            <h2 class="about__title">
+              Miami best
+              <br>
+              Real estate
+              <a
+                href="https://www.facebook.com/Miamicondokings/"
+                class="about__title-link"
+                target="_blank"
+              >
+                here
+              </a>
+            </h2>
+
+            <div class="about__content">
+              <span class="about__subtitle">Over 50 years experience in love.</span>
+
+              <p class="about__paragraph">
+                The market leader in real estate since 2003. Awards Real Estate Company, 2010, 2011, 2013. More than 200
+                satisfied customers premium segment. We focus only on new buildings and high-level doskanalno know this
+                area better than other specialists. Working directly with developers - so have more useful information
+                about the profitable deals.
+              </p>
+
+              <p class="about__paragraph">
+                Our commitment to excellence is underscored by our continuous innovation in real estate services. Our team of seasoned professionals employs cutting-edge technology to provide a seamless and transparent experience for our clients. Additionally, our customer-centric approach ensures that we not only meet but exceed the expectations of our diverse clientele. With a track record of success and a forward-thinking mindset, we remain at the forefront of the real estate industry, consistently delivering unparalleled results for our clients.
+              </p>
+
+              <p class="about__paragraph about__paragraph--important">
+                We will never be late!
+                <br>
+                Guaranteed secure transaction - 100%
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section gallery" id="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__title title">
+            Gallery
+          </h2>
+
+          <div class="gallery__place">
+            <div class="gallery__photos">
+              <div class="grid">
+                <div class="grid__item grid__item--desktop-1-8 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Marina-Palms.jpg"
+                      alt="Marina Palms"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+
+                <div class="grid__item grid__item--desktop-9-12 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Marina-Palms-2.jpg"
+                      alt="Marina Palms"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__description">
+              <a
+                href="https://goo.gl/maps/psygEhiG7XFyBaTJA"
+                class="gallery__link"
+                target="_blank"
+              >
+                <span class="gallery__place-title">
+                  Marina Palms
+                </span>
+                / North Miami Beach, FL 33162
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__place">
+            <div class="gallery__photos">
+              <div class="grid">
+                <div class="grid__item grid__item--desktop-1-6 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Edition-Residens.jpg"
+                      alt="Edition Residens"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+
+                <div class="grid__item grid__item--desktop-7-12 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Edition-Residens-2.jpg"
+                      alt="Edition Residens"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__description">
+              <a
+                href="https://goo.gl/maps/f24mBVBrw1Rt9EMf6"
+                class="gallery__link"
+                target="_blank"
+              >
+                <span class="gallery__place-title">
+                  Edition Residens
+                </span>
+                / Miami Beach, FL 33139
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__place">
+            <div class="gallery__photos">
+              <div class="grid">
+                <div class="grid__item grid__item--desktop-1-4 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Faena-House.jpg"
+                      alt="Faena House"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+
+                <div class="grid__item grid__item--desktop-5-12 place">
+                  <div class="place__photo-container">
+                    <img
+                      src="./images/photos/Faena-House-2.jpg"
+                      alt="Faena House"
+                      class="place__photo"
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gallery__description">
+              <a
+                href="https://goo.gl/maps/YUc9ZrPWtEPJwV1x7"
+                class="gallery__link"
+                target="_blank"
+              >
+                <span class="gallery__place-title">
+                  Faena House
+                </span>
+                / Miami Beach, FL 33140
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__button">
+            <a
+              href="https://www.facebook.com/Miamicondokings/"
+              class="button"
+              target="_blank"
+            >
+              View more
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section testimonial" id="testimonials">
+        <div class="testimonial__container">
+          <h2 class="testimonial__title title">
+            Testimonials
+          </h2>
+
+          <div class="testimonial__content">
+            <div class="testimonial__item">
+              <div class="testimonial__photo-container">
+                <img
+                  src="./images/testimonial/Leslie-Mckinney.jpg"
+                  class="testimonial__photo"
+                  alt="Leslie Mckinney"
+                >
+              </div>
+
+              <h3 class="testimonial__name">
+                Leslie Mckinney
+              </h3>
+
+              <div class="testimonial__role">
+                CEO
+              </div>
+
+              <p class="testimonial__about">
+                Nice work, Certificates National Association of Realtors (USA)
+              </p>
+            </div>
+
+            <div class="testimonial__item">
+              <div class="testimonial__photo-container">
+                <img
+                  src="./images/testimonial/Scarlett-Hawkins.jpg"
+                  class="testimonial__photo"
+                  alt="Scarlett Hawkins"
+                >
+              </div>
+
+              <h3 class="testimonial__name">
+                Scarlett Hawkins
+              </h3>
+
+              <div class="testimonial__role">
+                Senior Vice President
+              </div>
+
+              <p class="testimonial__about">
+                My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all
+                my heart
+              </p>
+            </div>
+
+            <div class="testimonial__item">
+              <div class="testimonial__photo-container">
+                <img
+                  src="./images/testimonial/Max-Henry.jpg"
+                  class="testimonial__photo"
+                  alt="Max Henry"
+                >
+              </div>
+
+              <h3 class="testimonial__name">
+                Max Henry
+              </h3>
+
+              <div class="testimonial__role">
+                Chief Design Officer
+              </div>
+
+              <p class="testimonial__about">
+                When my lovely valley of steam rises and half-day sun is above an impermeable
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section" id="contact-us">
+        <div class="page__container">
+          <h2 class="page__title title">
+            Contact us
+          </h2>
+
+          <div class="grid grid--desktop">
+            <div class="grid__item grid__item--1-2 contact-us">
+              <div class="contact-us__info">
+                <div class="contact-us__info-title">
+                  Phone
+                </div>
+
+                <a href="tel:+1 786-488-5722" class="contact-us__info-link">
+                  +1 786-488-5722
+                </a>
+              </div>
+
+              <div class="contact-us__info">
+                <div class="contact-us__info-title">
+                  Email
+                </div>
+
+                <a href="mailto:hello@miami.com" class="contact-us__info-link">
+                  condo_kings@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="grid__item grid__item--4-5 contact-us">
+              <div class="contact-us__info contact-us__info--last">
+                <div class="contact-us__info-title">
+                  Address
+                </div>
+
+                <a
+                  href="https://maps.app.goo.gl/2v8FN6A6fUryQN3V6"
+                  class="contact-us__info-link"
+                  target="_blank"
+                >
+                  Miami Beach, FL, <br>United States, <br>33132
+                </a>
+              </div>
+            </div>
+
+            <div class="grid__item grid__item--8-12 contact-us">
+              <form action="/" id="form-reload">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="contact-us__field form-field"
+                  required
+                >
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  class="contact-us__field form-field"
+                  required
+                >
+
+                <textarea
+                  name="message"
+                  class="contact-us__field contact-us__field--last form-field form-field--textarea"
+                  placeholder="Message"
+                  required
+                ></textarea>
+
+                <button class="button button--primary">
+                  Consultation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://vlkzmn.github.io/miami_landing/" class="logo">
+        <img
+          src="./images/miami-condo-kings-logo.png"
+          class="logo__image"
+          alt="Miami Condo Kings Logo"
+        >
+      </a>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

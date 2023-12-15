@@ -1,0 +1,38 @@
+.contact-us {
+  &__container {
+    @extend %container;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+
+    &--last {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $colorLightGray;
+  }
+
+  &__info-link {
+    border-bottom: 1px solid transparent;
+    transition: border-color $smoothTime;
+
+    &:hover {
+      border-color: $colorLightGray;
+    }
+  }
+
+  &__field {
+    margin-bottom: 16px;
+
+    &--last {
+      margin-bottom: 32px;
+    }
+  }
+}

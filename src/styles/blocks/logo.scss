@@ -1,0 +1,14 @@
+.logo {
+  &__image {
+    height: 48px;
+    transition: transform $smoothTime linear;
+
+    &:hover {
+      transform: scale(103%);
+    }
+
+    @include onDesktop {
+      height: 80px;
+    }
+  }
+}

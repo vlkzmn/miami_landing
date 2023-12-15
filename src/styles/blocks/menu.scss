@@ -1,0 +1,57 @@
+.menu {
+  background-color: $colorBlue;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: 100vh;
+    padding-top: 24px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 8px;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $colorWhite;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-color $smoothTime;
+
+    &:hover {
+      border-color: $colorWhite;
+    }
+  }
+
+  &__call {
+    display: block;
+    width: max-content;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $colorWhite;
+
+    &--phone {
+      margin-bottom: 12px;
+    }
+
+    &--action {
+      border-bottom: 1px solid $colorWhite;
+    }
+  }
+}
